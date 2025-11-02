@@ -51,7 +51,7 @@ stages:
               command: push
               repository: $(acrLoginServer)/$(imageRepository)
               dockerfile: $(dockerfilePath)
-              containerRegistry: $(dockerRegistryServiceConnection)
+              containerRegistry: 'dockerRegistryServiceConnection'
               tags: |
                 $(imageTag)
                 latest
