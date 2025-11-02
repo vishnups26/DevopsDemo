@@ -17,7 +17,7 @@ variables:
   - name: imageTag
     value: '$(Build.BuildId)'
   - name: helmChartPath
-    value: '$(Build.SourcesDirectory)/helm/secure-app'
+    value: '$(Build.SourcesDirectory)/secure-app'
 
 stages:
   - stage: Build
