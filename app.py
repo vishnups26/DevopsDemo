@@ -1,1 +1,1 @@
-Print("Hello Docker APP")
+print("Hello Docker APP")
