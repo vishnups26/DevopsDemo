@@ -73,7 +73,7 @@ stages:
                 - task: AzureCLI@2
                   displayName: 'Get AKS Credentials'
                   inputs:
-                    azureSubscription: '$(azureServiceConnection)'
+                    azureSubscription: 'azureServiceConnection'
                     scriptType: 'bash'
                     scriptLocation: 'inlineScript'
                     inlineScript: |
@@ -86,7 +86,7 @@ stages:
                   displayName: 'Helm install'
                   inputs:
                     connectionType: 'Azure Resource Manager'
-                    azureSubscription: '$(azureServiceConnection)'
+                    azureSubscription: 'azureServiceConnection'
                     azureResourceGroup: '$(resourceGroupName)'
                     kubernetesCluster: '$(aksClusterName)'
                     namespace: 'production'
