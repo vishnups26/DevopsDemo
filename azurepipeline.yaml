@@ -5,11 +5,6 @@ trigger:
     include:
       - main
       - develop
-  paths:
-    include:
-      - src/*
-      - helm/*
-      - Dockerfile
 
 pool:
   vmImage: 'ubuntu-latest'
